@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View USDZ Model</title>
+    <title>View 3D Model in AR</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
-
 <body>
-    <h1>点击下方链接查看 3D 模型</h1>
-    <a href="https://drive.google.com/uc?export=download&id=1frzZSTJVZXcTEZ4AtHYRh0YK8L9eCBZ3" rel="ar">
-        查看模型
-    </a>
+    <h1>Click the model below to view in AR</h1>
+    <model-viewer
+        alt="3D model of a couch"
+        src="https://quyifan-jpg.github.io/glf/couch.usdz"
+        ar
+        environment-image="https://modelviewer.dev/shared-assets/environments/moon_1k.hdr"
+        poster="https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp"
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y">
+    </model-viewer>
 </body>
-
 </html>
