@@ -1,17 +1,14 @@
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View USDZ Model</title>
+    <title>View 3D Model in AR</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
-
 <body>
-    <h1>点击下方链接查看 3D 模型</h1>
-    <a href="https://username.github.io/repo-name/model.usdz" rel="ar">
-        查看模型
-    </a>
+    <h1>查看 AR</h1>
+    <model-viewer src="https://username.github.io/repo-name/model.usdz" alt="3D Model" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
 </body>
-
 </html>
